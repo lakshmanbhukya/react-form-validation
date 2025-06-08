@@ -1,12 +1,38 @@
-# React + Vite
+# 📝 React Registration Form (Vite + React Router)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **responsive, validated registration form** built using **React** with **Vite** and **React Router DOM**. It validates fields without third-party libraries and redirects to a success page after form submission.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 📋 Collects user data with fields like:
+  - First Name, Last Name
+  - Username, Email, Password
+  - Phone Number (with country code)
+  - Country and City dropdowns
+  - PAN & Aadhar Number
+- 🔒 Built-in validation:
+  - Validates all inputs live (e.g., Aadhar = 12 digits, PAN = valid format)
+  - Email, password strength, and more
+- 👀 Show/Hide password toggle
+- ❌ Displays real-time error messages
+- ✅ Disables Submit button until all validations pass
+- 🔀 Redirects to a new route `/success` showing submitted data
+- 💾 Uses `localStorage` to pass data between pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Project Structure
+react-registration-form/
+├── public/
+├── src/
+│ ├── App.jsx
+│ ├── main.jsx
+│ ├── RegistrationForm.jsx
+│ ├── RegistrationForm.css
+│ └── SuccessPage.jsx
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
