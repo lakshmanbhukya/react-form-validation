@@ -22,17 +22,3 @@ This is a **responsive, validated registration form** built using **React** with
 - 💾 Uses `localStorage` to pass data between pages
 
 ---
-
-## 📁 Project Structure
-react-registration-form/
-├── public/
-├── src/
-│ ├── App.jsx
-│ ├── main.jsx
-│ ├── RegistrationForm.jsx
-│ ├── RegistrationForm.css
-│ └── SuccessPage.jsx
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
